@@ -51,7 +51,7 @@ pipeline{
                 sshPublisher(
                     publishers: [
                         sshPublisherDesc(
-                            configName: "Prod",
+                            configName: "node1",
                             transfers: [
                                 sshTransfer(sourceFiles: "${params.FILE_NAME}")
                             ]
